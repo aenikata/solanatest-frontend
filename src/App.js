@@ -181,7 +181,8 @@ const App = () => {
               {/* We use index as the key instead, also, the src is now item.gifLink */}
               {gifList.map((item, index) => (
                 <div className="gif-item" key={index}>
-                  <img src={item.gifLink} alt="Unknown" />
+                  <img src={item.gifLink} alt="Unknown" /><br/>
+                  <span style={{color:'white'}}>Submitted by:<br/>{item.userAddress.toString()}</span>
                 </div>
               ))}
             </div>
